@@ -1,4 +1,6 @@
-
+let userScore=0;
+let computerScore=0;
+while (userScore<5 && computerScore<5){
 let userInput
 let u=prompt("rock paper scissor?")
 function getHumanChoice(){
@@ -23,7 +25,11 @@ if (userInput == computer){
 }
 else if(userInput+1 == computer || computer+2 ==userInput){
     console.log("Computer Won")
+    computerScore++;
 }
 else{
     console.log("You Won")
+    userScore++;
 }
+}
+console.log('You '+userScore+':'+computerScore+' Computer');
