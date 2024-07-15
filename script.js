@@ -15,6 +15,7 @@ function getHumanChoice(){
         console.log("Invalid Input!!!")
     }
 }
+getHumanChoice();
 let computer = Math.floor(Math.random() * 3)
 console.log(computer)
 if (userInput == computer){
